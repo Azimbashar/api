@@ -1,7 +1,7 @@
 let input = document.getElementById('input');
 let sbtn = document.getElementById('search');
 let r = document.getElementById('result');
-m = document.getElementById('main');
+let m = document.getElementById('main');
 sbtn.addEventListener('click',()=>{
     let countryn = input.value.toUpperCase();
 
@@ -10,7 +10,7 @@ sbtn.addEventListener('click',()=>{
     fetch(url).then((response) => response.json()).then((data)=> {
         m.style.border = "2px solid  rgb(21, 128, 119)";
         r.innerHTML = `
-        <img src = "${data[0].flags.svg}"; id= "img">
+        <img src = "${data[0].flags.svg}" id= "img">
         <h2 id = "cname">${data[0].name.common}</h2>
         <div id = "box">
         <div id = "box1"> Capital:  <h4 id = "data">${data[0].capital[0]}</h2>  </div>
@@ -20,7 +20,7 @@ sbtn.addEventListener('click',()=>{
         <div id = "box1"> Area:  <h4 id = "data">${data[0].area}</h2>  </div>
         <div id = "box1"> Population:  <h4 id = "data">${data[0].population}</h2>  </div>
         <div id = "box1"> Drivinge Side:  <h4 id = "data">${data[0].car.side}</h2> </div> 
-</div></div>
+</div>
         `
     })
 })
