@@ -3,14 +3,14 @@ let sbtn = document.getElementById('search');
 let r = document.getElementById('result');
 let m = document.getElementById('main');
 sbtn.addEventListener('click',()=>{
-    let countryn = input.value.toUpperCase();
+let countryn = input.value.toUpperCase();
 
-    let url = `https://restcountries.com/v3.1/name/${countryn}?fullText=true`;
+let url = `https://restcountries.com/v3.1/name/${countryn}?fullText=true`;
 
-    fetch(url).then((response) => response.json()).then((data)=> {
-        m.style.border = "2px solid  rgb(21, 128, 119)";
+    fetch(url).then((response) => response.json()).then((data)=> {  
         r.innerHTML = `
         <img src = "${data[0].flags.svg}" id= "img">
+
         <h2 id = "cname">${data[0].name.common}</h2>
         <div id = "box">
         <div id = "box1"> Capital:  <h4 id = "data">${data[0].capital[0]}</h2>  </div>
