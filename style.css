@@ -1,0 +1,173 @@
+*{padding: 0%;
+margin: 0%;}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(193, 241, 225);
+}
+
+#main{
+    width: 40vw;
+    height: 40vw;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+#local{
+    height: 50px;
+    width: 90%;
+    background-color: rgb(21, 128, 119);
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid white;
+}
+#input{
+    height: 50%;
+    width: 60%;
+    outline: none;
+    background-color: transparent;
+   border: none;
+   color: white;
+   border-bottom: 1px solid white;
+   font-size: 1.5vw;
+}
+#input::placeholder{
+    color: white;
+}
+
+#search{
+    height: 60%;
+    width: 17%;
+    border-radius: 100px;
+    color: rgb(21, 128, 119);
+    border: none;
+    font-size: 1.4vw;
+    cursor: pointer;
+}
+#result{
+    width: 100%;
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#img{
+   height: 10vw;
+    margin: .5vw;
+    border-radius: 10px;   
+}
+
+#box{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid  rgb(21, 128, 119);
+    border-radius: 5px;
+    margin: 1vw;
+    padding: 1vw;
+    
+}
+#cname{
+    font-size: 25px;
+}
+#box1{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 900;
+    padding: .2vw;
+}
+#data{
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 8px;
+}
+@media (max-width: 950px)
+{
+    #main{
+        height: 70vw;
+        width: 70vw;
+    }
+    #local{
+        height: 8vw;
+    }
+    #search{
+        font-size: 2.5vw;
+    }
+
+    #input{
+    font-size: 3vw;
+}
+    #result{
+    margin-top: 5vw;
+}
+    #img{
+    height: 15vw;
+    }
+    #cname{
+        font-size: 5vw;
+    }
+    #box{
+        height: 25vw;
+    }
+    #box1{
+font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 500px)
+{
+    #main{
+        height: 100vh;
+        width: 98vw;
+        border: none;
+        padding: 0;
+    }
+    #local{
+        height: 15vw;
+        width: 95%;
+        padding: 0;
+    }
+    #input{
+       font-size: 4vw;
+    }
+
+    #search{
+        width: 25%;
+        font-size: 4vw;
+    }
+    #result{
+    margin-top: 5vw;
+    height: 80%;
+}
+    #img{
+    height: 50vw;
+    }
+    #cname{
+        font-size: 10vw;
+    }
+    #box{
+        height: 70%;
+    }
+    #box1{
+     font-size: 7vw;
+     margin: auto 0;
+    }
+    #data{
+        font-size: 5vw;
+    }
+}
